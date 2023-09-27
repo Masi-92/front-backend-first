@@ -1,0 +1,105 @@
+:root{
+   box-sizing: border-box;
+   font-family: 'Dosis', sans-serif;
+   background-color: whitesmoke;
+   color: #333;
+}
+
+.app {
+   h1 {
+      text-align: center;
+   }
+   form {
+      width: 40%;
+      margin: 0 auto;
+      padding: 2em;
+      background-color: #ddd;
+      border-radius: 5px;
+      label {
+         display: flex;
+         flex-direction: column;
+      }
+      input {
+         padding: 0.3em;
+         font-size: 1.2rem;
+         border: 2px solid #ddd;
+         border-radius: 5px;
+         outline: none;
+      }
+      .buttonWrapper {
+         display: flex;
+         justify-content: center;
+         padding: 1em;
+         button {
+            padding: 0.5em 1.5em;
+            font-family: 'Dosis', sans-serif;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.5s;
+         }
+         button:hover {
+            filter: grayscale(0.8);
+         }
+         button:first-of-type{
+            margin-right: 1em;
+            background-color: green;
+            color: white;
+         }
+         button:last-of-type{
+            background-color: orangered;
+            color: white;
+         }
+      }
+   }
+   .listWrapper {
+      width: 40%;
+      margin: 4em auto;
+      ul {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         gap: 1em;
+         padding: 0;
+         li {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5em 1em;
+            width: 80%;
+            background-color: #aaa;
+            list-style-type: none;
+            border-radius: 5px;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            .imageWrapper {
+               display: flex;
+               gap: 10px;
+               img {
+                  width: 20px;
+                  cursor: pointer;
+               }
+            }
+         }
+         .editWrapper {
+            display: flex;
+            gap: 10px;
+            width: 50%;
+            .editTask {
+               padding: 0.3em 0.7em;
+               width: 100%;
+               border: none;
+               outline: none;
+               border-radius: 5px;
+            }
+            button {
+               font-family: 'Dosis', sans-serif;
+               background-color: green;
+               color: white;
+               border: none;
+               border-radius: 5px;
+               cursor: pointer;
+            }
+         }
+      }
+   }
+}
